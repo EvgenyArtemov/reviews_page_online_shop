@@ -1,0 +1,105 @@
+@import 'base.scss';
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    max-width: 930px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    .reviews__heading {
+        display: flex;
+        width: 100%;
+        margin-top: 2.3rem;
+        border: 1px solid $border-color;
+
+        & h3 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: $lightgrey-text-color;
+        }
+        .col-1{
+            h3 {
+                padding-left: 1.7rem;
+            }
+        }
+    }
+
+    .reviews {
+        &__item {
+            border-bottom: 1px solid $border-color;
+
+            .item__description {
+                margin-top: 0;
+                padding-right: 3rem;
+                color: $main-text-color;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+            }
+
+            .review__base {
+                display: flex;
+                padding: 1.6rem 0;
+            }
+
+            .rating__score {
+                color: $lightgrey-text-color;
+                font-size: 1.2rem;
+                line-height: 20px;
+                padding-left: 7px;
+            }
+
+            .review__characteristics {
+                display: flex;
+
+                & p {
+                    color: $lightgrey-text-color;
+                    font-size: 1.2rem;
+                    line-height: 20px;
+
+                    & spun {
+                        font-weight: bold;
+                    }
+                }
+
+                & p:not(:first-child) {
+                    padding-left: 1.5rem;
+                }
+            }
+
+            .review_additional {
+                border-top: 1px solid $border-color;
+                display: flex;
+                padding: 1.6rem 0;
+
+                .additional__header {
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                    color: $orange-text;
+                }
+
+                .additional__text {
+                    font-size: 1.2rem;
+                    color: $main-text-color;
+                }
+            }
+        }
+    }
+}
+

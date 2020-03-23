@@ -1,0 +1,129 @@
+@import 'base.scss';
+
+.heading--text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.7rem;
+    color: $main-text-color;
+}
+
+.notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $notification-grey-background;
+
+    &__text {
+        font-size: 1.5rem;
+        font-weight: normal;
+        padding: 3rem  1rem 3rem 1rem;
+        color: $main-text-color2;
+    }
+}
+
+.exl--point {
+    margin: 0 0 0 3rem;
+}
+
+.star {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url(../img/star.jpg);
+}
+
+.moreLessBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: $orange-text;
+    padding-left: 0;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    cursor: pointer;
+    &:focus {
+        outline: 0;
+    }
+}
+
+.arrow {
+    position: absolute;
+    top: 6px;
+    left: 70px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #FF6D00;
+    border-right: 2px solid #FF6D00;
+    transform: rotate(135deg);
+  }
+
+.btn {
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    border-radius: 2px;
+}
+
+.green {
+    background: $button-green;
+}
+
+.lightgreen {
+    background: $button-lightgreen;
+}
+
+.gray {
+    background: $button-grey;
+}
+
+
+.date {
+    font-size: 1.2rem;
+    color: $lightgrey-text-color;
+    display: block;
+    margin-top: 0.8rem;
+}
+
+.addReviewBtn {
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: $lightgrey-text-color;
+    border: 1px solid $lightgrey-text-color;
+    border-radius: 2px;
+    padding: 8px 0;
+}
+
+.review__image {
+    border: 1px solid lightgrey;
+    padding: 3px;
+    border-radius: 2px;
+    height: 60px;
+    width: auto;
+}
+
+.gallery {
+    margin-bottom: 4rem;
+    &> a:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.text__deactivated {
+    font-size: 1.2rem;
+    color: $lightgrey-text-color;
+}
+
+.review__text {
+    height: 80px;
+    font-size: 1.2rem;
+    color: $main-text-color;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}

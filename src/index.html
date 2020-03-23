@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/b312d8f36a.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link href="../node_modules/simplelightbox/dist/simple-lightbox.min.css" rel="stylesheet">
+    <title>Мои отзывы о товарах</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="heading--text">Мои отзывы о товарах</h1>
+            <div class="notification">
+                <img class="exl--point" src="./img/excl_point.svg" aria-hidden="true" alt="exclamation point sign">
+                <h3 class="notification__text">Ваши отзывы будут опубликованы на сайте после проверки модератором.</h3>
+            </div>
+            <div class="reviews__heading" id="heading">
+                <div class="col-1">
+                    <h3 class="item__photo">Фото</h3>
+                </div>
+                <div class="col-2">
+                    <h3 class="item__description">Наименование товара</h3>
+                </div>
+                <div class="col-3">
+                    <h3 class="item__review">Ваши отзывы</h3>
+                    
+                </div>
+                <div class="col-4">
+                    <h3 class="item__status">Статус отзыва </h3>
+                </div>
+                <div class="col-5">
+                    <h3 class="item__action">Действия</h3>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="reviews">
+                <div class="reviews__item">
+                    <div class="review__base">
+                        <div class="col-1">
+                            <img src="./img/drel.jpg" alt="" class="item__photo">
+                        </div>
+                        <div class="col-2">
+                            <p class="item__description">
+                                Дрель ударная BOSCH PSB 550 RЕ, БЗП Арт.0603130020
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <div class="item__review">
+                                <div class="review__rating">
+                                    <span class="rating__stars">
+                                        <i class="rating__icon star"></i>
+                                        <i class="rating__icon star"></i>
+                                        <i class="rating__icon star"></i>
+                                        <i class="rating__icon star"></i>
+                                        <i class="rating__icon star"></i>
+                                    </span>
+                                    <span class="rating__score">4.6</span>
+                                </div>
+                                <div class="review__characteristics">
+                                    <p class="impression">
+                                        Впечатление:
+                                        <span>5</span>
+                                    </p>
+                                    <p class="compliance">
+                                        Соответсвие:
+                                        <span>5</span>
+                                    </p>
+                                    <p class="reliability">
+                                        Надежность:
+                                        <span>5</span>
+                                    </p>
+                                </div>
+                                <div class="review__text dots">
+                                    Значит купил я данную модель, поработал неделю, отказал один аккумулятор, заряд держит так себе, НОООООО МАГАЗИН АДЕКВАТНЫЙ, ОБМЕНЯЛИ НА НОВЫЙ, ПРИЧЁМ ПРИВЕЗЛИ ДОМОЙ. С ТАКИМ ПРОДАВЦОМ ПРИЯТНО РАБОТАТЬ. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quae maiores, unde possimus ipsa quas?
+                                </div>
+                                <button class="moreLessBtn">
+                                    Подробнее
+                                    <span class="arrow"></span>
+                                </button>
+                            </div>
+                            
+                        </div>
+                        <div class="col-4">
+                            <div class="status">
+                                <button class="btn green">опубликован</button>
+                                <span class="date">1 августа, 2018</span>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <button class="addReviewBtn">Дополнить отзыв</button>
+                        </div>
+                    </div>
+                    <div class="review_additional" id="additional">
+                        <div class="col-1"></div>
+                        <div class="col-2"></div>
+                        <div class="col-3">
+                            <h4 class="additional__header">
+                                Дополненный отзыв
+                            </h4>
+                            <p class="additional__text">
+                                Год прошел, работает как пушка!
+                            </p>
+                            <div class="gallery">
+                                <a href="../src/img/1full.jpg" ><img src="../src/img/1min.jpg" class="review__image" alt="review image" /></a>
+                                <a href="../src/img/2full.jpg"><img src="../src/img/2min.jpg" class="review__image" alt="review image" /></a>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="status">
+                                <button class="btn lightgreen">На модерации</button>
+                                <span class="date">1 августа, 2018</span>
+                            </div>
+                        </div>
+                        <div class="col-5"></div>
+                    </div>
+                </div>
+                <div class="reviews__item">
+                    <div class="review__base">
+                        <div class="col-1">
+                            <img src="./img/null.jpg" alt="" class="item__photo">
+                        </div>
+                        <div class="col-2">
+                            <p class="item__description">
+                                Декоративный металлический экран на радиатор 3-х секционный 3 ДМЭР
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <div class="item__review">
+                               <p class="text__deactivated">
+                                К сожалению, ваш отзыв не прошёл модерацию.
+                               </p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-4">
+                            <div class="status">
+                                <button class="btn gray">Не опубликован</button>
+                                <span class="date">23 июня, 2019</span>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../node_modules/simplelightbox/dist/simple-lightbox.min.js"></script>
+</body>
+</html>
